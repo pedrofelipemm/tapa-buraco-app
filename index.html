@@ -1,29 +1,55 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-     <title>tapa-buraco-app</title>
+    <title>tapa-buraco-app</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/map.js"></script>
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=[Sua chave do Maps]&sensor=true">
-    </script>
+    <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=[Sua chave do Maps]&sensor=true"> -->
+</script>
 
 </head>
 <body onload="initialize()">
+
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="span6 pull-right">
+                <ul class="nav">
+                    <li class="active"><a href="#">Mapa Principal</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Como usar?</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
     
-    <div class="content">
-        
-        <div class="header">
-            <h1>tapa-buraco-app</h1>
-        </div>   
+    <div class="row-fluid marginT60">
 
-        <div id="map_canvas"></div>
-
-        <div class="contentTopList">
-            TopList
+        <div class="span6">
+            <div class="hero-unit offset2">
+                <h3>Caiu? Em qual Buraco?</h3>   
+            </div>
         </div>
 
-    </div>    
+        <div class="span3 ">
+            <div class="well sidebar-nav">
+                <ol class="nav nav-list">
+                    <li class="nav-header">Melhores Colaboradores</li>
+                    <li class="active"><a href="#"></a>Joao Otavio</li>
+                    <li><a href="#"></a>Joao Sakai</li>
+                    <li><a href="#"></a>Joao Genari</li>
+                    <li><a href="#"></a>Joao Pires</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Mapa do Projeto -->
+        <!-- <div id="map_canvas"></div> -->
+
+    </div>
+
 
 </body>
 </html>
